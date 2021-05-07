@@ -68,6 +68,7 @@ Linux Cooked interface使用编译（venetX，OpenVZ）：
     ethtool -K 网卡名 tso off
     
 另一个net-speeder仓库的使用方法：
+
     # speed up all ip packets
     nice -n -5 netspeeder eth0 "ip" &> /dev/null &
 
