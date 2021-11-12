@@ -77,3 +77,7 @@ Linux Cooked interface使用编译（venetX，OpenVZ）：
 
     # fix error: "err msg: [libnet_write_raw_ipv4(): -1 bytes written (Message too long)"
     ethtool -K eth0 tso off
+    
+自己使用的net-speeder命令：
+    
+    nohup net_speeder ens3 "ip" >/dev/null 2>&1 &
