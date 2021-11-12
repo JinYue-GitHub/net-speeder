@@ -81,3 +81,9 @@ Linux Cooked interface使用编译（venetX，OpenVZ）：
 自己使用的net-speeder命令：
     
     nohup net_speeder ens3 "ip" >/dev/null 2>&1 &
+    
+启动脚本：
+
+    ethtool -K ens3 tso off
+    ./net_speeder ens3 "ip" >/dev/null 2>&1 &
+    echo "net speeder started."
